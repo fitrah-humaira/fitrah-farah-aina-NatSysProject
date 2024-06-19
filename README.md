@@ -325,13 +325,26 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.   6182.7 avail Mem
 @fitrah-humaira ➜ /workspaces/fitrah-farah-aina-NatSysProject (main) $ uname -a
 Linux codespaces-371d20 6.5.0-1021-azure #22~22.04.1-Ubuntu SMP Tue Apr 30 16:08:18 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
 ```
-11. What is the available free memory in the system. ***(1 mark)*** __Fill answer here__.
-12. What is the available disk space mounted on /workspace. ***(1 mark)*** __Fill answer here__.
-13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** __Fill answer here__.
-14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** __Fill answer here__.
-15. What is the TLB size of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** __Fill answer here__.
+11. What is the available free memory in the system. ***(1 mark)***<br>
+295 Mi
+
+12. What is the available disk space mounted on /workspace. ***(1 mark)***<br>
+20,772,584 KiB
+
+13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)***<br>
+Version: Ubuntu 22.04.1, Hardware Architecture: x86_64
+
+14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)***<br>
+'ls' lists the contents of the directory while 'ls-asl' lists the content of the directory with details and includes the hidden files
+
+15. What is the TLB size of the Virtual CPU. ***(1 mark)***<br>
+2560 4K pages
+
+16. What is the CPU speed of the Virtual CPU. ***(1 mark)***<br>
+Processor 0: 2786.505 MHz, Processor 1: 2767.835 MHz
+
+17. What is the top running process that consumes the most CPU cycles. ***(1 mark)***<br>
+PID: 2138 and 2823 with %cpu 0.9
 
 ## Running your own container instance.
 
