@@ -436,7 +436,10 @@ permission: '-rw-r--r--', user and group: 'root root'
 sudo chown -R codespace:codespace myroot
 
 ```
-    Yes.
+```bash
+#Yes. Output
+-rw-rw-rw- 1 codespace codespace 12 Jun 19 05:18 testfile.txt
+```
 
 ## You are on your own, create your own static webpage
 
@@ -474,8 +477,9 @@ Apache web serber port: 80
 3. What port is open for http protocol on the host machine? ***(1 mark)***<br>
 Host Machine HTTP Port: 8080
 
-Output:
 ```bash
+#Output:
+
 @fitrah-humaira ➜ /workspaces/fitrah-farah-aina-NatSysProject (main) $ docker ps
 CONTAINER ID   IMAGE     COMMAND              CREATED              STATUS              PORTS                                   NAMES
 1510cf342672   httpd     "httpd-foreground"   About a minute ago   Up About a minute   0.0.0.0:8080->80/tcp, :::8080->80/tcp   musing_galileo
