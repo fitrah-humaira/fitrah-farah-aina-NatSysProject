@@ -404,8 +404,11 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 
 ***Questions:***
 
-1. Are files in the container persistent. Why not?. ***(1 mark)*** __Fill answer here__.
-2. Can we run two, or three instances of debian linux? . ***(1 mark)*** __Fill answer here__.
+1. Are files in the container persistent. Why not?. ***(1 mark)***<br>
+No. Files in the container are not persistent because when the container is stopped or removed any things or data inside the container will lost.
+
+2. Can we run two, or three instances of debian linux? . ***(1 mark)***<br>
+Yes
 
 ## Running your own container with persistent storage
 
@@ -424,14 +427,16 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 
 ***Questions:***
 
-1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** __Fill answer here__.
+1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)***<br>
+permission: '-rw-r--r--', user and group: 'root root'
+
 2. Can you change the permission of the files to user codespace.  You will need this to be able to commit and get points for this question. ***(2 mark)***
 ```bash
 //use sudo and chown
 sudo chown -R codespace:codespace myroot
 
 ```
-*** __Fill answer here__.***
+Yes
 
 ## You are on your own, create your own static webpage
 
@@ -457,9 +462,23 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
 
 ***Questions:***
 
-1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** __Fill answer here__.
-2. What port is the apache web server running. ***(1 mark)***
-3. What port is open for http protocol on the host machine? ***(1 mark)***
+1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)***<br>
+Permission: drwxrwxrwx, output:
+```bash
+@fitrah-humaira ➜ /workspaces/fitrah-farah-aina-NatSysProject (main) $ docker exec -it 1510cf342672 ls -ld /usr/lo
+cal/apache2/htdocs
+drwxrwxrwx+ 2 1000 1000 4096 Jun 19 05:02 /usr/local/apache2/htdocs
+```
+2. What port is the apache web server running. ***(1 mark)***<br>
+Apache web serber port: 80
+3. What port is open for http protocol on the host machine? ***(1 mark)***<br>
+Host Machine HTTP Port: 8080
+```bash
+@fitrah-humaira ➜ /workspaces/fitrah-farah-aina-NatSysProject (main) $ docker ps
+CONTAINER ID   IMAGE     COMMAND              CREATED              STATUS              PORTS                                   NAMES
+1510cf342672   httpd     "httpd-foreground"   About a minute ago   Up About a minute   0.0.0.0:8080->80/tcp, :::8080->80/tcp   musing_galileo
+fb939310b7cd   debian    "bash"               22 minutes ago       Up 22 minutes                                               interesting_kapitsa
+```
 
 ## Create SUB Networks
 
