@@ -579,7 +579,22 @@ docker network connect bridgenet c1
 docker network connect bridgenet c2
 docker exec c1 ping c2
 ```
-
+```bash
+#Ping successful. Output:
+@fitrah-humaira ➜ /workspaces/fitrah-farah-aina-NatSysProject (main) $ docker exec c1 ping c2
+PING c2 (172.20.0.3): 56 data bytes
+64 bytes from 172.20.0.3: seq=0 ttl=64 time=0.141 ms
+64 bytes from 172.20.0.3: seq=1 ttl=64 time=0.071 ms
+64 bytes from 172.20.0.3: seq=2 ttl=64 time=0.058 ms
+64 bytes from 172.20.0.3: seq=3 ttl=64 time=0.068 ms
+64 bytes from 172.20.0.3: seq=4 ttl=64 time=0.085 ms
+64 bytes from 172.20.0.3: seq=5 ttl=64 time=0.080 ms
+64 bytes from 172.20.0.3: seq=6 ttl=64 time=0.082 ms
+64 bytes from 172.20.0.3: seq=7 ttl=64 time=0.081 ms
+64 bytes from 172.20.0.3: seq=8 ttl=64 time=0.089 ms
+64 bytes from 172.20.0.3: seq=9 ttl=64 time=0.066 ms
+...
+```
 ## What to submit
 
 1. Make sure to commit all changes on your source control, and make sure your source control is sync to the repository. 
