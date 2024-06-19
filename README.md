@@ -3,9 +3,9 @@
 Group Name: __Fill your team name__. 
 
 Team Mates:
-1. __Fill name__ and __matric no__
-2. __Fill name__ and __matric no__
-3. __Fill name__ and __matric no__
+1. FITRAH NUR HUMAIRA BINTI MUHAMAD RADAUDIN 2212822
+2. FARAH IRDINA BINTI AHMAD ZULKIFLEE 2215184
+3. AINA SYAZANA BINTI MORTADZA 2218248
 
 ## Rules
 1. You are allowed to have **3 group** members.
@@ -22,9 +22,11 @@ Team Mates:
 
 ***Questions:***
 
-1. What is the link of the fork Net&Sys Assignment in your repository. ***(1 mark)*** __Fill answer here__.
-2. How many files and folders are in this repository. ***(1 mark)*** __Fill answer here__.
+1. What is the link of the fork Net&Sys Assignment in your repository. ***(1 mark)***<br>
+https://github.com/fitrah-humaira/fitrah-farah-aina-NatSysProject
 
+2. How many files and folders are in this repository. ***(1 mark)***<br>
+1 file: README and 1 folder: images
 
 ## Exploring github codespaces
 
@@ -55,9 +57,15 @@ Team Mates:
 
 ***Questions:***
 
-1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** __Fill answer here__.
-2. What are the two options of RAM, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** __Fill answer here__.
-3. Why must we commit and sync our current work on source control? ***(1 mark)*** __Fill answer here__.
+1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** <br>
+Ubuntu Linux.
+
+2. What are the two options of RAM, disk and vcpu configuration you can have in running codespaces . ***(1 mark)***<br>
+Option 1: RAM: 4GB, Disk: 32GB SSD, vCPUs: 2<br>
+Option 2: RAM: 8GB, Disk: 64GB SSD, vCPUs: 4
+
+3. Why must we commit and sync our current work on source control? ***(1 mark)*** <br>
+Commiting and syncing work will prevent our progress from lost and keep track on any changes.
 
 ## Exploring the Terminal
 
